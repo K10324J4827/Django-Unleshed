@@ -1,2 +1,7 @@
+[alias]
+    prev = checkout HEAD^
+	next = !git checkout `git rev-list HEAD..master | tail -1`
+chapter = "!f() { if [ ${#1} == 1 ]; then git log --oneline --color=always | grep -e \"Ch0$1\" --color=always; else git log --onel
+
 https://github.com/K10324J4827/Django-Unleshed.git
 pwd/.gitconfig
